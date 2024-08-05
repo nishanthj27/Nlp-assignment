@@ -1,0 +1,119 @@
+Unigrams and their frequencies:
+the: 6
+quick: 2
+brown: 1
+fox: 4
+jumps: 1
+over: 1
+lazy: 1
+dog: 2
+.: 4
+barks: 1
+back: 1
+at: 1
+runs: 1
+away: 1
+into: 1
+forest: 1
+a: 1
+red: 1
+appears: 1
+
+Bigrams and their frequencies:
+('the', 'quick'): 1
+('quick', 'brown'): 1
+('brown', 'fox'): 1
+('fox', 'jumps'): 1
+('jumps', 'over'): 1
+('over', 'the'): 1
+('the', 'lazy'): 1
+('lazy', 'dog'): 1
+('dog', '.'): 1
+('.', 'the'): 2
+('the', 'dog'): 1
+('dog', 'barks'): 1
+('barks', 'back'): 1
+('back', 'at'): 1
+('at', 'the'): 1
+('the', 'fox'): 2
+('fox', '.'): 1
+('fox', 'runs'): 1
+('runs', 'away'): 1
+('away', 'into'): 1
+('into', 'the'): 1
+('the', 'forest'): 1
+('forest', '.'): 1
+('.', 'a'): 1
+('a', 'quick'): 1
+('quick', 'red'): 1
+('red', 'fox'): 1
+('fox', 'appears'): 1
+('appears', '.'): 1
+
+Trigrams and their frequencies:
+('the', 'quick', 'brown'): 1
+('quick', 'brown', 'fox'): 1
+('brown', 'fox', 'jumps'): 1
+('fox', 'jumps', 'over'): 1
+('jumps', 'over', 'the'): 1
+('over', 'the', 'lazy'): 1
+('the', 'lazy', 'dog'): 1
+('lazy', 'dog', '.'): 1
+('dog', '.', 'the'): 1
+('.', 'the', 'dog'): 1
+('the', 'dog', 'barks'): 1
+('dog', 'barks', 'back'): 1
+('barks', 'back', 'at'): 1
+('back', 'at', 'the'): 1
+('at', 'the', 'fox'): 1
+('the', 'fox', '.'): 1
+('fox', '.', 'the'): 1
+('.', 'the', 'fox'): 1
+('the', 'fox', 'runs'): 1
+('fox', 'runs', 'away'): 1
+('runs', 'away', 'into'): 1
+('away', 'into', 'the'): 1
+('into', 'the', 'forest'): 1
+('the', 'forest', '.'): 1
+('forest', '.', 'a'): 1
+('.', 'a', 'quick'): 1
+('a', 'quick', 'red'): 1
+('quick', 'red', 'fox'): 1
+('red', 'fox', 'appears'): 1
+('fox', 'appears', '.'): 1
+
+Bigram Probabilities:
+P(quick | the) = 0.17
+P(lazy | the) = 0.17
+P(dog | the) = 0.17
+P(fox | the) = 0.33
+P(forest | the) = 0.17
+P(brown | quick) = 0.50
+P(red | quick) = 0.50
+P(fox | brown) = 1.00
+P(jumps | fox) = 0.25
+P(. | fox) = 0.25
+P(runs | fox) = 0.25
+P(appears | fox) = 0.25
+P(over | jumps) = 1.00
+P(the | over) = 1.00
+P(dog | lazy) = 1.00
+P(. | dog) = 0.50
+P(barks | dog) = 0.50
+P(the | .) = 0.50
+P(a | .) = 0.25
+P(back | barks) = 1.00
+P(at | back) = 1.00
+P(the | at) = 1.00
+P(away | runs) = 1.00
+P(into | away) = 1.00
+P(the | into) = 1.00
+P(. | forest) = 1.00
+P(quick | a) = 1.00
+P(fox | red) = 1.00
+P(. | appears) = 1.00
+
+Next Word Predictions:
+Next word after 'the': fox
+Next word after 'quick': brown
+Next word after 'fox': jumps
